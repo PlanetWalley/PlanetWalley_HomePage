@@ -1,0 +1,137 @@
+<html>
+	<head>
+		<title>Planet Walley</title>
+		<meta charset='utf8'>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="js/jquery.js"></script>
+	</head>
+	<body>
+		<div>
+			<!-- The html now is organized using 'slide' by Yiyi Wang
+	
+			-->
+
+			<!-- Top Bar -->
+			<!--
+			<ul id="top-bar">
+					<li class="top-bar-item">
+						Planet Walley
+					</li>
+			</ul> -->
+
+			<!-- slide class -->
+			<div class="slide">
+				<h1 id="big_head">
+					Welcome to Planet Walley ;)
+				</h1>
+				<h2 id="enter_our_world">
+					Enter Our World!
+				</h2>
+			</div>
+
+			<div class="slide" id="slide2">
+				<h1 id="postit_head">
+					Project PostIt
+				</h1>
+
+				<div id="postit_information" style="padding-left:5%; width:45%; height:500px;">
+					<h2>"See what others posted in camera."</h2>
+					<h3> Updates: </h3>
+					<ul>
+						<li>Midterm presentation added 
+						<a href="http://web.engr.illinois.edu/~yiboguo2/cs498ma/Midterm_presentation.pdf">here</a>
+						. (2013-10-18)</li>
+						<li>A online 2D version is also available 
+						<a href="./2D/online/index.html">here</a>
+						. (2013-09-22) </li>
+                   		<li>A local 2D version using Google Maps API is available 
+                   		<a href="./2D/local/index.html">here</a>. (2013-09-21)</li>
+					</ul>
+					<h3> Resources: </h3>
+					<ul>
+						<li>Windows Phone Dev Center - 
+						<a href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/hh202984(v=vs.105).aspx#BKMK_CreatingaSilverlightbasedAugmentedRealityApplication">How to use the combined Motion API for Windows Phone</a>
+						. (2013-10-17)</li>
+						<li>Windows Phone Dev Center - 
+						<a href="http://msdn.microsoft.com/en-us/library/windowsphone/develop/hh202876(v=vs.105).aspx">
+            How to create a basic local database app for Windows Phone</a>
+      					. (2013-10-17)</li>
+					</ul>
+					<h3> Team members </h3>
+					<ul>
+						<li>
+							Sai (GUI)
+						</li>
+						<li>
+							Yibo (WP Client)
+						</li>
+						<li>
+							Yiyi (iOS Client)
+						</li>
+					</ul>
+					<h3>About</h3>
+					<p>
+						"Post It" is a mobile augmented reality social app, in which people can post messages at their location and see what's going on around them using camera.
+					</p>
+				</div>
+
+				<div id="postit_gallery" style="width:50%;height:500px;background-color:cyan;">
+					<img src="postit_gallery/1.png" width="100%" height="100%">
+				</div>
+
+			</div>
+
+
+
+			<div id="slide3" class="slide">
+				<div id="chemical_equation_gallery" class="horizental_div">
+					<img src="chemi_gallery/1.jpg"  style="width:100%; height:400px; padding-top:100px;">
+				</div>
+
+				<div id="chemical_equation_balancer_information" class="horizental_div">
+					<h1 id="chemical_equation_balancer_head" style=" float:left; width: 100%; font-size: 50px; padding-top: 100px; padding-left: 5%;"> 
+					Chemical Equation Balancer
+					</h1>
+					<p style="padding-left: 5%;width: 100%;">
+						Chemical Equation Balancer is a very simple application <br>
+						that can help you balance any Chemical Equation
+					</p>
+					<h2 style="padding-left:10%;"> Resources: </h2>
+					<ul style="padding-left:10%;width:100%;"> 
+						<li>
+							<a href="http://apps.microsoft.com/windows/en-us/app/673efac2-bb87-44fe-8cf9-06f20ac00df0" style="color:white;"> 
+									Windows 8 version	
+							</a>
+						</li>
+						</br>
+						<li>
+							<a href="https://github.com/shd101wyy/ChemicalEquationInPython" style="color:white;">
+								Python Script	
+							</a>
+						</li>
+					</ul>
+
+					<h2 style="padding-left:10%;">Team members </h2>
+					<ul style="padding-left:10%;width:100%;">
+						<li>
+							Yibo 
+						</li>
+						</br>
+						<li>
+							Yiyi 
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript">
+	window.onload = function(){
+		setTimeout(function(){
+			// automaticlly scroll down
+			$('body,html').animate({ scrollTop: 800 }, 1000); 
+		}, 1400)
+	}
+	</script>
+</html>

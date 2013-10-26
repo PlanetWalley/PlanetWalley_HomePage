@@ -1,0 +1,134 @@
+html, body{
+	background-color: #454545;
+	color: white;
+	font-family: Helvetica;
+	width: auto;
+}
+.slide{	
+	width: 100%;
+	height: 800px;
+	/* border-bottom: 2px cyan inset; */
+}
+
+@keyframes slidein {
+  from {
+    left: 20%;
+    top: 0%;
+    color: #454545;
+  }
+
+  to {
+    left: 20%;
+    top: 240px;
+    color: white;
+  }
+}
+@-webkit-keyframes slidein {
+  from {
+    left: 20%;
+    top: 0%;
+    color: #454545;
+  }
+
+  to {
+    left: 20%;
+    top: 240px;
+    color: white;
+  }
+}
+
+#big_head{
+	animation:slidein 2s;
+	-webkit-animation:slidein 2s; /* Safari and Chrome */
+
+	position: absolute;
+	width: 80%;
+	height: 100px;
+	left: 20%;
+	top: 240px; 
+	font-size: 60px;
+	font-family: Helvetica;
+}
+
+
+
+@keyframes enter_our_world_animation {
+  0%{
+  	color: #454545;
+  }
+  80%{
+  	color: white;
+  }
+}
+@-webkit-keyframes enter_our_world_animation {
+  0%{
+  	color: #454545;
+  }
+  80%{
+  	color: white;
+  }
+}
+
+#enter_our_world{
+	animation:enter_our_world_animation 5s;
+	-webkit-animation:enter_our_world_animation 5s; /* Safari and Chrome */
+	position: absolute;
+	width: 80%;
+	height: 100px;
+	left: 30%;
+	top: 400px; 
+	font-size: 30px;
+	font-family: Helvetica;
+}
+
+
+/* slide2 */
+#slide2{
+	background-color: #FFFFFF;
+	color: #454545;
+}
+#slide2 div{
+	float: left;
+	clear: none;
+}
+
+#postit_head{
+	width: 60%;
+	font-size: 50px;
+	padding-top: 100px;
+	padding-left: 5%;
+}
+
+
+/* slide 3 */
+#slice3{
+	background-color: #454545;
+	color: #FFFFFF;
+}
+
+.horizental_div{
+	float: left;
+	padding-left: 5%;
+	width: 45%;
+	top: 500px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
