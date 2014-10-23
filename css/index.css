@@ -3,6 +3,8 @@ html, body{
 	color: white;
 	font-family: Helvetica;
 	width: auto;
+    width: 100%;
+    height: 100%;
 }
 .slide{	
 	width: 100%;
@@ -101,7 +103,7 @@ html, body{
 
 
 /* slide 3 */
-#slice3{
+#slide3{
 	background-color: #454545;
 	color: #FFFFFF;
 }

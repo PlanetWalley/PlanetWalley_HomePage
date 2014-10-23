@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>
+			Planet Walley
+		</title>
+
+	</head>
+	<body style="background-color:#f0f0f0;">
+		
+		<script type="text/javascript">
+			// some codes from http://jsfiddle.net/qspcL/
+			// check html5 audio support 
+			function html5_audio(){
+			    var a = document.createElement('audio');
+			    return !!(a.canPlayType && a.canPlayType('audio/mpeg;').replace(/no/, ''));
+			}
+			// check support audio
+			var support_audio = html5_audio()
+			if(support_audio)
+			{
+				// play sound function
+				function play_sound(url){
+				    if(support_audio){
+				        var snd = new Audio(url);
+				        snd.load();
+				        snd.play();
+				    }else{
+				        $("#sound").remove();
+				        var sound = $("<embed id='sound' type='audio/mpeg' />");
+				        sound.attr('src', url);
+				        sound.attr('loop', false);
+				        sound.attr('hidden', true);
+				        sound.attr('autostart', true);
+				        $('body').append(sound);
+				    }
+				}
+
+				function readme(txt){
+				    play_sound("http://translate.google.com/translate_tts?ie=UTF-8&q="+encodeURIComponent(txt)+"&tl=en&total=1&idx=0prev=input");           
+				}
+				readme('Hey~~~ Welcome to Planet Walley')
+			}
+		</script>
+	</body>
+</html>
